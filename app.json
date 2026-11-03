@@ -1,0 +1,74 @@
+{
+  "expo": {
+    "name": "TER by FinFect",
+    "slug": "TerApp",
+    "version": "2.0.4",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash-logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.finfect.ter",
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "Allow TER to access your photo library to upload bill attachments.",
+        "NSCameraUsageDescription": "Allow TER to use your camera to capture bill images.",
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.portal.ter",
+      "adaptiveIcon": {
+        "backgroundColor": "#081420",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "softwareKeyboardLayoutMode": "resize",
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "enableMinifyInReleaseBuilds": true,
+            "enableShrinkResourcesInReleaseBuilds": true
+          }
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#000000",
+          "image": "./assets/splash-logo.png",
+          "imageWidth": 220,
+          "resizeMode": "contain"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow TER to access your photo library to upload bill attachments.",
+          "cameraPermission": "Allow TER to use your camera to capture bill images."
+        }
+      ],
+      "expo-asset",
+      "@react-native-community/datetimepicker"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "9cf8c7ab-d55d-4e6a-afb7-20b09d555ac9"
+      }
+    }
+  }
+}

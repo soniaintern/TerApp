@@ -1,0 +1,49 @@
+{
+  "cli": {
+    "version": ">= 16.3.2",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "android": { "buildType": "apk" },
+      "env": { "EXPO_PUBLIC_API_URL": "https://ternew.etsbeta.com/" }
+    },
+    "preview": {
+      "distribution": "internal",
+      "android": { "buildType": "apk" },
+      "env": { "EXPO_PUBLIC_API_URL": "https://ternew.etsbeta.com/" }
+    },
+    "live-test": {
+      "distribution": "internal",
+      "android": { "buildType": "apk" },
+      "env": { "EXPO_PUBLIC_API_URL": "https://ter.finfect.biz/" }
+    },
+    "production": {
+      "autoIncrement": true,
+      "env": {
+        "EXPO_PUBLIC_API_URL": "https://ter.finfect.biz/"
+      }
+    },
+    "uat-testflight": {
+      "distribution": "store",
+      "autoIncrement": true,
+      "env": {
+        "EXPO_PUBLIC_API_URL": "https://ter.finfect.biz/"
+      }
+    }
+  },
+  "submit": {
+    "production": {
+      "ios": {
+        "ascAppId": "6807772595"
+      }
+    },
+    "uat-testflight": {
+      "ios": {
+        "ascAppId": "6807772595"
+      }
+    }
+  }
+}

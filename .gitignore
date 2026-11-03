@@ -1,0 +1,81 @@
+# Dependencies
+node_modules/
+vendor/
+
+# Expo and generated builds
+.expo/
+dist/
+build/
+web-build/
+coverage/
+expo-env.d.ts
+
+# Tool and temporary caches
+.cache/
+.parcel-cache/
+.metro-health-check*
+.npm/
+.pnpm-store/
+.yarn/cache/
+*.tsbuildinfo
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.tmp
+*.temp
+*.swp
+*.swo
+*.orig
+*.orig.*
+temp/
+tmp/
+
+# Laravel runtime files
+storage/logs/*
+!storage/logs/.gitignore
+bootstrap/cache/*
+!bootstrap/cache/.gitignore
+storage/framework/cache/*
+storage/framework/sessions/*
+storage/framework/views/*
+.phpunit.cache/
+.phpunit.result.cache
+
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+!.env.*.example
+/secrets/
+credentials.json
+credentials.*.json
+*-service-account*.json
+*.secret
+*.pem
+*.key
+*.p8
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.mobileprovision
+*.crt
+*.cer
+*.der
+id_rsa
+id_ed25519
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE files
+.idea/
+*.iml
+.vscode-test/
+
+# Local agent notes
+/AGENT_CORE_*.md
